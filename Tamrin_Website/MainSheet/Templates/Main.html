@@ -1,0 +1,141 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My WebSite</title>
+    <link rel="stylesheet" href="{% static 'File/css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="Modal">
+            <div class="Head-Modal">
+                <h2>سلام به شرکت مای وبسایت خوش آمدید</h2>
+            </div>
+            <div class="Body-Modal">
+                <div class="Modal-Body-Right">
+                    <img src="{% static 'File/img/MyPhoto.jpg' %}" >
+                    <h2>فهیم رضا حسینی</h2>
+                    <h5>متخصص پایتون از مای وبسایت</h5>
+                </div>
+                <div class="Body-Left">
+                    <textarea name="" placeholder="سلام سوالتو بپرس میتونم گمکت کنم؟" id="" cols="30" rows="10"></textarea>
+                    <button>ارسال</button>
+                </div>
+            </div>
+            <div class="Footer-Modal">
+                <h2>برای ارتباط بیشتر در تلگرام با ادمین در ارتباط باشید </h2>
+            </div>
+    </div>
+
+    <header class="Hdr1" >
+        <div class="Header-Right" >
+            <div class="Menobar">
+                <ul>
+                    <li><a href="#Main">خانه</a></li>
+                    <li><a href="#Ashenaee">آشنایی با ما</a></li>
+                    <li><a href="#Servises">خدمات ما</a></li>
+                    <li><a href="#Footer">ارتباط با ما</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="Header-Left">
+            <span>MyWebsite</span>
+        </div>
+    </header>
+
+    <div class="Main" id="Main">
+        <div class="Roposh">
+
+        </div>
+        <h3>سال تاسیس <span>1404</span></h3>
+        <h2>به مجموعه مای وبسایت خوش آمدید</h2>
+    </div>
+
+    <section class="Ashenaee" id="Ashenaee" >
+        <div class="Ashenaee-Right" >
+                <div class="Takhfif">
+                <span>برای دریافت <a href="#">اخبار</a> کلیک کنید</span>
+            </div>
+            <img src="{% static 'File/img/Icon.png' %}" alt="">
+            <h2>این مجموعه متشکل از افرادی در حوزه های زیر میباشد :</h2>
+            <div class="Maharat">
+                <span>Ui/Ux Designer , Front Developer , BachEnd Developer , Windows Aplication Developer ....</span>
+
+            </div>
+        </div>
+        <hr />
+        <div class="Ashenaee-Left">
+            <img src="{% static 'File/img/Ashenaee.jpg' %}" alt="Programmer-Photo">
+        </div>
+    </section>
+
+    <section class="Servises" id="Servises">
+        <div class="Servis-Bars">
+            <div class="Bar">
+                <img src="{% static 'File/img/Nemone-4.png' %}" alt="Pirayesh">
+                <h2>نمونه قالب شرکتی</h2>
+            </div>
+            <div class="Bar">
+                <img src="{% static 'File/img/Nemone-2.png' %}" alt="Pirayesh">
+                <h2>نمونه قالب شخصی</h2>
+            </div>
+            <div class="Bar">
+                <img src="{% static 'File/img/Nemone-1.png' %}" alt="Pirayesh">
+                <h2>نمونه قالب فروشگاهی</h2>
+            </div>
+
+        </div>
+    </section>
+    <section class="Footer" id="Footer">
+        <div class="Footer-Main">
+            <div class="Footer-Right">
+                <img src="{% static 'File/img/Sherkat.png' %}" id="Yoo" alt="">
+
+                <div class="Addres">
+                    <h1>آدرس : </h1>
+                    <h5>تهران ، ولنجک ، صدوقی شمالی ، پلاک 12</h5>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-linkedin'></i>
+                    <i class='bx bxl-whatsapp'></i>
+                    <i class='bx bxl-telegram'></i>
+                </div>
+            </div>
+            <div class="Footer-Left">
+                <div class="BioGrafi">
+                    <img src="{% static 'File/img/Komputer.jpg' %}" alt="MyPhoto">
+                    <h2 dir="rtl">تاریخچه شرکت :</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="Karbord">
+        <img src="{% static 'File/img/Karbord.png' %}" id="Karbord-img" alt="کاربرد">
+    </div>
+
+
+    <script src="{% static 'File/js/jquery.js' %}"></script>
+    <script src="{% static 'File/js/script.js' %}"></script>
+</body>
+
+</html>

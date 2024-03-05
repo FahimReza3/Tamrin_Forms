@@ -1,0 +1,602 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+    color: white;
+}
+
+.Hdr1{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 0 10px black;
+    background-color: aliceblue;
+    opacity: 0.7;
+    border-bottom: 2px solid #000;
+}
+
+.Header-Right {
+    width: 80%;
+    height: auto;
+    font-size: 15px;
+    font-family: 'Vazir',sans-serif;
+    text-align: center;
+    float: right;
+}
+
+.Header-Right ul{
+    padding: 2%;
+    overflow: hidden;
+    margin: 10px 2%;
+}
+
+.Header-Right ul li{
+    display: inline;
+}
+
+.Header-Right ul li a{
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 2px 10px 2px 20px;
+    color: #000;
+    transition: all ease-in 0.5s;
+}
+
+
+.Header-Right ul li a:hover{
+    padding-right: 50px;
+    border-bottom: 1px solid #040404;
+    transition: all 1s ease-out;
+    padding-left: 50px;
+    color: rgb(255 9 0);
+}
+
+
+.Header-Right ul li a:focus{
+    padding-right: 50px;
+    border-radius: 8px;
+    transition: all 1s ease-out;
+    padding-left: 50px;
+    color: #ff3608;
+}
+
+.Header-Left{
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    padding: 30px;
+    animation: Slide-Left 1s forwards;
+    font-size: 20px;
+    color:#000;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.Main{
+    background: url("../img/Sherkat.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    background-attachment: fixed;
+}
+
+.Main h3{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Vazir',sans-serif;
+    float: right;
+    position: absolute;
+    top: 17%;
+    animation: Slide-Right 1s forwards;
+    right: 7%;
+    color: white;
+}
+.Main h2{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Vazir',sans-serif;
+    padding: 22px;
+    position: absolute;
+    bottom: 8%;
+    left: 3%;
+    animation: Slide-Bottom 1s forwards;
+    color: white;   
+}
+
+.Main h3 span{
+    font-size: 25px;
+    font-weight: bold;
+    color: antiquewhite;
+    text-shadow: 10px 12px 4px red;
+}
+
+.Roposh{
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.Ashenaee{
+    background: beige;
+    width: 100%;
+    height: 700px;
+    box-shadow: 0 0 1px black;
+}
+
+.Ashenaee .Ashenaee-Right{
+    background: #828274;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.Ashenaee .Ashenaee-Left{
+    background: #000;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.Ashenaee-Left img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.Ashenaee-Right .Takhfif span{
+    text-align: right;
+    float: right;
+    margin: 20px 20px 0 0;
+    font-size: 20px;
+    font-family: 'Vazir' , sans-serif;
+    font-weight: 700;
+    color: #3b2c2c;
+    animation: Slide-Right 1s 0.5s forwards;
+}
+
+.Ashenaee-Right .Takhfif span a{
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 0 0 3px red;
+}
+
+.Ashenaee-Right h2{
+    color: #000;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    animation: Slide-Right 1s 0.5s forwards;
+    font-family: 'Vazir',sans-serif;
+    direction: rtl;
+    margin: -5% 3% 0% 0;
+}
+
+.Maharat{
+    overflow: hidden;
+    width: 80%;
+    line-height: 2;
+    margin-left: 40px;
+    margin-top: 4%;
+    box-sizing: border-box;
+    animation: Slide-Bottom 1s 0.5s forwards;
+
+}
+
+
+.Maharat span{
+    font-size: 20px;
+    color: #000;
+    box-shadow: 0 0 4px;
+}
+
+.Servises{
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    background-color: #322626;
+}
+
+.Servis-Bars{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.Bar{
+    width: 30%;
+    height: 300px;
+    margin: 70px 120px 0 20px;
+    transition: all ease-out 1s;
+
+}
+
+.Bar img{
+    width: 100%;
+    height: 300px;
+    border: 1px solid white;
+}
+
+.Bar:hover{
+    scale: 1.3;
+    transition: all ease-in 1s;
+    width: 80%;}
+
+
+
+.Bar h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Vazir',sans-serif;
+    color: lightslategrey;
+
+}
+
+.Footer{
+    width: 100%;
+    height: 650px;
+}
+
+.Footer-Right{
+    background-color: #382e2b;
+    float: right;
+    direction: rtl;
+    width: 50%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.Footer-Left{
+    background-color: #626158;
+    width: 50%;
+    height: 650px;
+    text-align: center;
+}
+
+.Addres{
+
+    margin: 0%;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    
+}
+
+.Addres h1{
+    float: right;
+    font-size: 30px;
+    font-family: 'Vazir' , sans-serif;
+    font-weight: 600;
+    color: antiquewhite;
+    margin: 2% 2% 0 0;
+
+}
+
+.Addres i{
+    font-size: 30px;
+    float: left;
+    position: relative;
+    top: 65%;
+    margin: 0 0 2% 2%;
+}
+
+.Addres i:hover{
+    color: cyan;
+}
+
+.Addres h5{
+    font-size: 15px;
+    font-family: system-ui;
+    top: 55%;
+    position: relative;
+    float: right;
+}
+
+.BioGrafi{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.BioGrafi img{
+    width: 40%;
+    text-align: center;
+    height: 280px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin: 3% 0 0 0%;
+}
+
+.BioGrafi h2{
+    color: black;
+    margin: 3% 0 3% 0;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Vazir',sans-serif;
+}
+
+.BioGrafi p{
+    margin: 3% 15%;
+    line-height: 3;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Vazir',sans-serif;
+    color: cornsilk;
+    direction: rtl;
+}
+
+#Yoo{
+    width: 103%;
+    height: 500px;
+}
+
+.Karbord{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    bottom: 5%;
+    left: 2%;
+    background: #ffffff;
+    border: 3px solid red;
+    border-radius: 50%;
+    transition: all ease-in 1s;
+}
+
+.Karbord img{
+    width: 100%;
+    height: auto;
+    transition: all ease-out 1s;
+    cursor: pointer;
+}
+
+.Karbord:hover{
+    transition: all ease-out 1s;
+    opacity: 1;
+}
+
+.Karbord img:hover{
+    transition: all ease-in 1s;
+    transform: rotate(360deg);
+
+}
+
+.Modal{
+    position: fixed;
+    width: 40%;
+    height: 60%;
+    display: none;
+    background: #727d86d4;
+    transition: all ease-out 1s;
+    z-index: 1;
+    margin: 6% 0px 0px 40px;
+}
+
+.Modal-One{
+    width: 50%;
+    height: 70%;
+    background: white;
+    margin: 7% 0% 0px 24%;
+
+}
+
+.Head-Modal{
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(178deg, black, #555555);
+    box-shadow: 0px 0px 11px black;
+    margin-left: 0%;
+    text-align: center;
+}
+
+.Head-Modal h2{
+    font-size: 30px;
+    font-family: 'Vazir' , sans-serif;
+    font-weight: 500;
+    padding: 40px;
+}
+
+.Modal-Body-Right {
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 9px #828282;
+    float: right;
+}
+
+.Modal-Body-Right img{
+    width: 30%;
+    border: 2px solid #878787;
+    border-radius: 50%;
+    margin: 15px 0;
+    box-shadow: 0 0 20px black;
+
+}
+
+.Modal-Body-Right h2{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Vazir' , sans-serif;
+    color: black;
+    text-shadow: 6px 7px 5px white;
+}
+
+.Modal-Body-Right h5{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Vazir' , sans-serif;
+    color: black;
+    margin: 7px 0 0 0;
+}
+
+.Body-Left{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.Body-Left textarea{
+    width: 100%;
+    height: 80%;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Vazir',sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.Body-Left button{
+    width: 100%;
+    height: 47px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Vazir' , sans-serif;
+    text-shadow: 4px 4px 8px red;
+}
+.Body-Modal{
+    width: 100%;
+    height: 60%;
+    background: #dedede;
+    text-align: center;
+    box-shadow: 0px 0px 9px black;
+}
+
+.Footer-Modal h2{
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Vazir' , sans-serif;
+}
+
+#Message-input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: 'Vazir',sans-serif;
+    font-weight: 500;
+    color: #352714;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.Admins{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    overflow: auto;
+
+}
+
+.admin-Modal{
+    width: 90%;
+    height: 38%;
+    overflow: hidden;
+    background-color: #8c7272;
+    border-bottom: 3px solid red;
+    float: right;
+    margin: 10px 15px 10px 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px black;
+}
+
+.Admins .admin-Modal h2{
+    font-size: 12px;
+    font-family: 'Vazir',sans-serif;
+    padding: 10px 0;
+}
+
+.Admins .admin-Modal p{
+    font-size: 12px;
+    font-family: 'Vazir',sans-serif;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.Admins span:focus{
+    background-color: #ff3608;
+}
+
+.img-Photo-Modal{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+    background-size: cover;
+    border: 2px solid rebeccapurple;
+    margin: 15px 10px 0 0;
+}
+
+.admin-Modal:hover{
+    scale: 0.8;
+    transition: all ease-in 1s;
+}
+
+
+.img-Photo-Modal img{
+    width: 100%;
+    height: 100%;
+}
+
+.Footer-Modal{
+    width: 100%;
+    height: 20%;
+    background: beige;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/* animation: Slide-Top 1s 0.5s forwards; */
+
+@keyframes Slide-Top {
+
+    0%{
+        transform: translateY(50px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes Slide-Right {
+    0%{
+        transform: translateX(50px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes Slide-Bottom {
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+@keyframes Slide-Left {
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
