@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include 'BootLink.html' %}
+</head>
+<body>
+
+<div class="container">
+  <h2>Stacked form</h2>
+  <form action="/AddUser" method="post">
+    {% csrf_token %}
+    {{ Form }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
