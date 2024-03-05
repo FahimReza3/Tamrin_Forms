@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('' , views.Main , name="MainSheet"),
-    path('AddUser' , views.AddUser , name="AddUser Page")
+    path('AddUser' , views.AddUser , name="AddUser Page"),
+    path('ViewUser' , views.ViewUser , name="ViewUser Page"),
 ]

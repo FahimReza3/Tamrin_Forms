@@ -17,3 +17,7 @@ def AddUser(request):
         forms=LoginForm()
 
     return render(request=request , template_name="SignUp.html" , context={"Form" : forms})
+
+def ViewUser(request):
+    DataBase=User.objects.all()
+    return render(request=request , template_name="TableData.html" , context={"DataBase" : DataBase})
