@@ -19,10 +19,22 @@ def AddUser(request):
     return render(request=request , template_name="SignUp.html" , context={"Form" : forms , "Message" : msg})
 
 def ViewUser(request):
+    forms=LoginForm()
     DataBase=User.objects.all()
-    return render(request=request , template_name="TableData.html" , context={"DataBase" : DataBase})
+    return render(request=request , template_name="TableData.html" , context={"DataBase" : DataBase , "Form" : forms})
 
 def DeletUser(request , id):
     Data=User.objects.filter(id=id).first()
     Data.delete()
     return HttpResponseRedirect("/ViewUser")
+
+def UpdateUser(request):
+    if request.method == "POST":
+        forms=LoginForm(request.POST)
+        id=forms.data["id"]
+        User1=User.objects.filter(id=id).first()
+        User1.FullName=forms.data["FullName"]
+        User1.Email=forms.data["Email"]
+        User1.Password=forms.data["Password"]
+        User1.save()
+        return HttpResponseRedirect("/ViewUser")

@@ -10,7 +10,7 @@
 
 <div class="container">
   <h2 class="text-center m-3">Login Form</h2>
-  <form action="/AddUser" method="post" class="text-center">
+  <form action="/AddUser" dir="rtl" method="post" class="text-center ">
     {% csrf_token %}
     {{ Form }}
     <button type="submit" class="btn btn-primary p-3 mt-2 mt-5   float-center">ثبت نام</button>
@@ -18,6 +18,8 @@
         {{ Message }}
 
   </form>
+
+
 
       <a class="btn btn-dark m-3  p-3 float-left" href="ViewUser">نمایش اطلاعات ثبت شده</a>
   <a class="btn btn-dark m-3 p-3 float-right "  href="/">برگشت به خانه</a>
