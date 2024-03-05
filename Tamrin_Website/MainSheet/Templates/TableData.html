@@ -31,13 +31,15 @@
         <td>{{ item.FullName }}</td>
         <td>{{ item.Email }}</td>
         <td>{{ item.Password }}</td>
-        <td><a class="btn btn-danger">Delete</a>
+        <td><a class="btn btn-danger" href="DeletUser/{{ item.id }}">Delete</a>
        <a class="btn btn-success">Update</a></td>
       </tr>
     {% endfor %}
     </tbody>
   </table>
 </div>
+
+<a href="/" class="btn btn-dark m-5 float-center">برگشت به خانه</a>
 
 </body>
 </html>
