@@ -6,17 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include 'BootLink.html' %}
 </head>
-<body>
+<body class="bg-info">
 
 <div class="container">
-  <h2>Stacked form</h2>
-  <form action="/AddUser" method="post">
+  <h2 class="text-center m-3">Login Form</h2>
+  <form action="/AddUser" method="post" class="text-center">
     {% csrf_token %}
     {{ Form }}
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary p-3 mt-2 mt-5   float-center">ثبت نام</button>
   </form>
 
-  <a class="btn btn-dark" href="ViewUser">نمایش اطلاعات ثبت شده</a>
+      <a class="btn btn-dark m-3  p-3 float-left" href="ViewUser">نمایش اطلاعات ثبت شده</a>
+  <a class="btn btn-dark m-3 p-3 float-right "  href="/">برگشت به خانه</a>
+
 </div>
 
 </body>
